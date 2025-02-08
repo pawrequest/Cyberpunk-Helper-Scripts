@@ -7,6 +7,9 @@ requires-python = "==3.11"
 dependencies = [
     'pillow',
     'numpy',
+]
+[project.optional-dependencies]
+blender = [
     'bpy',
     'mathutils',
 ]
