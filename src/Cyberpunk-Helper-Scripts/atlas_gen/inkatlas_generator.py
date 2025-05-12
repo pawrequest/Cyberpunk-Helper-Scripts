@@ -64,7 +64,7 @@ def make_parts_from_layout(layout: AtlasLayout, atlas_name:str) -> List[InkAtlas
     return parts
 
 
-def main(*, spacing: int = 1, in_dir:Path=INPUT_FOLDER, out_dir=OUTPUT_FOLDER, atlas_name = ATLAS_NAME):
+def generate_inkatlas(*, spacing: int = 1, in_dir:Path=INPUT_FOLDER, out_dir=OUTPUT_FOLDER, atlas_name = ATLAS_NAME):
     image_files = [file for file in in_dir.iterdir() if file.suffix == ".png"]
     images = [Image.open(file) for file in image_files]
     layout = AtlasLayout(images, spacing)
@@ -84,4 +84,4 @@ def main(*, spacing: int = 1, in_dir:Path=INPUT_FOLDER, out_dir=OUTPUT_FOLDER, a
 
 
 if __name__ == "__main__":
-    main()
+    generate_inkatlas()
