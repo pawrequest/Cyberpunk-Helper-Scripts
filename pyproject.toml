@@ -1,5 +1,5 @@
 [project]
-name = "Cyberpunk-Helper-Scripts"
+name = "cyberpunkPr"
 version = "0.0.1"
 description = "A collection of scripts to help with Cyberpunk 2077 modding."
 readme = "README.md"
